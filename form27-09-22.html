@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Homework</title>
+  
+
+</head>
+  <body>
+    <h1>Get in Touch</h1>
+    <form action="">
+        <label for="firstname">First Name:</label><br>
+        <input id="firstname" type="text" required size="30" value="John" name="firstname">
+        <br></br>
+        <div><label for="surname">Surname:</label></div>
+        <input id="surname" type="text" required size="30" value="Doe" name="surname">
+        <br></br>
+        <div><label for="email">Email:</label></div>
+        <input id="email" type="email" required size="30" value="example@gmail.com" name="email">
+        <br></br>
+        <div><label for="message">Message:</label></div>
+        <textarea style="width: 230px;resize: vertical;min-height: 150px;" id="message" type="text" required placeholder="Leave your message here..." aria-setsize="50,50" name="message"></textarea>
+        <br></br>
+        <input type="submit" value="Submit" name="submit" id="submit">
+    </form>
+    <section>
+        <h3 style="margin-bottom:0cm">Where did you find us?</h3>
+        <input id="web" type="radio" name="chosen">
+        <label for="web">Internet</label>
+        <input id="mouth" type="radio" name="chosen">
+        <label for="mouth">Word of mouth</label>
+        <input id="tv" type="radio" name="chosen">
+        <label for="tv">TV</label>
+        <br></br>
+    </section>
+    <section>
+        <h3 style="margin-bottom:0cm">Please rate the service given:</h3>
+        <input id="vgood" type="checkbox" value="1" name="vgood" checked>
+        <label for="vgood">Very good</label>
+        <input id="gd" type="checkbox" name="gd">
+        <label for="gd">Good</label>
+        <input id="bad" type="checkbox" name="bad">
+        <label for="bad">Bad</label>
+        <br></br>
+    </section>
+  </body>
+</html>
