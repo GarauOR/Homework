@@ -5,44 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Homework</title>
-  
-
+  <link rel="stylesheet" href="mystyle.css">
+  <style>
+    .internal{
+      color:darkgoldenrod;
+      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-weight: lighter;
+    }
+  </style>
 </head>
   <body>
-    <h1>Get in Touch</h1>
+    <h1 class="internal">Get in Touch</h1>
     <form action="">
-        <label for="firstname">First Name:</label><br>
-        <input id="firstname" type="text" required size="30" value="John" name="firstname">
+        <label for="firstname" class="internal">First Name:</label><br>
+        <input id="firstname" type="text" required size="30" value="John" name="firstname" class="external">
         <br></br>
-        <div><label for="surname">Surname:</label></div>
-        <input id="surname" type="text" required size="30" value="Doe" name="surname">
+        <div><label for="surname" class="internal">Surname:</label></div>
+        <input id="surname" type="text" required size="30" value="Doe" name="surname" class="external">
         <br></br>
-        <div><label for="email">Email:</label></div>
-        <input id="email" type="email" required size="30" value="example@gmail.com" name="email">
+        <div><label for="email" class="internal">Email:</label></div>
+        <input id="email" type="email" required size="30" value="example@gmail.com" name="email" class="external">
         <br></br>
-        <div><label for="message">Message:</label></div>
-        <textarea style="width: 230px;resize: vertical;min-height: 150px;" id="message" type="text" required placeholder="Leave your message here..." aria-setsize="50,50" name="message"></textarea>
+        <div><label for="message" class="internal">Message:</label></div>
+        <textarea style="width: 230px;resize: vertical;min-height: 150px;" id="message" type="text" required placeholder="Leave your message here..." aria-setsize="50,50" name="message" class="external"></textarea>
         <br></br>
-        <input type="submit" value="Submit" name="submit" id="submit">
+        <input type="submit" value="Submit" name="submit" id="submit" style="background-color:darkgray; color:brown; border-color: black; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-stretch: expanded; size: 50px;">
     </form>
     <section>
-        <h3 style="margin-bottom:0cm">Where did you find us?</h3>
+        <h3 style="margin-bottom:0cm" class="internal">Where did you find us?</h3>
         <input id="web" type="radio" name="chosen">
-        <label for="web">Internet</label>
+        <label for="web" class="external">Internet</label>
         <input id="mouth" type="radio" name="chosen">
-        <label for="mouth">Word of mouth</label>
+        <label for="mouth" class="external">Word of mouth</label>
         <input id="tv" type="radio" name="chosen">
-        <label for="tv">TV</label>
+        <label for="tv" class="external">TV</label>
         <br></br>
     </section>
     <section>
-        <h3 style="margin-bottom:0cm">Please rate the service given:</h3>
+        <h3 style="margin-bottom:0cm" class="internal">Please rate the service given:</h3>
         <input id="vgood" type="checkbox" value="1" name="vgood" checked>
-        <label for="vgood">Very good</label>
+        <label for="vgood" class="external">Very good</label>
         <input id="gd" type="checkbox" name="gd">
-        <label for="gd">Good</label>
+        <label for="gd" class="external">Good</label>
         <input id="bad" type="checkbox" name="bad">
-        <label for="bad">Bad</label>
+        <label for="bad" class="external">Bad</label>
         <br></br>
     </section>
   </body>
