@@ -1,0 +1,30 @@
+.topnav a {
+    margin-top: 14px;
+    float:left;
+    color: black;
+    text-align:center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family:'Verdana', 'Tahoma', Segoe UI, Geneva, sans-serif ;
+  }
+
+  .topnav a:hover {color: darkgreen;}
+
+  .container {
+    border-radius: 25px; 
+    width:300px;
+    height: 20px;
+    font-family:'Verdana', 'Tahoma', Segoe UI, Geneva, sans-serif ;
+    border-style:groove;
+    background-color: rgba(128, 255, 0, 0.103);
+    border-color: rgba(74, 104, 44, 0.151);
+    margin: 0 auto;
+
+  }
+
+  #textbox {
+    border-style: hidden;
+    width: 300px;
+    background-color: transparent;
+  }

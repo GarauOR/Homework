@@ -1,0 +1,336 @@
+* {
+    font-family::'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darkcyan;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    border-style: none;
+    background-color:whitesmoke;
+    box-shadow: 1px 1px 2px lightgrey;
+    font-weight: bold;
+}
+
+.btn:active {
+    box-shadow: none;
+}
+
+.brd {
+    border: 0px;
+    border-bottom: 1px;
+    border-color: lightgrey;
+    border-style: solid;
+    box-shadow: 2px 2px 2px lightgrey;
+}
+/*Nav start*/
+.navContainer {
+    padding: 1rem;
+    font-size: 2rem;
+    position: relative;
+    font-weight: bold;
+}
+
+.navLogo {
+    display: inline;
+    height: 6rem;
+    vertical-align: auto;
+    margin-right: 1rem;
+}
+
+.leftNav, .rightNav, .spaceNav {
+    display: none;
+}
+
+.burgerMenu {
+    height: 5rem;
+    float: right;
+    vertical-align: auto;
+}
+
+.location {
+    height: 2rem;
+}
+/*Nav end*/
+
+/*Main start*/
+
+.mainContainer {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    background-color: rgb(238, 245, 255);
+}
+
+#coffee {
+    width: 100%;
+    margin: 0px;
+}
+
+.mainInfo {
+    padding: 7vh 0rem;
+    width: 100%;
+}
+
+#coffeeBtn {
+    display: flex;
+    margin: 3rem auto;
+}
+
+.mainInfo span {
+    display:block;
+    font-size: 4rem;
+    margin-bottom: 2vh;
+    text-align: center;
+}
+
+.mainInfo p {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin: 0px auto;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 3vw;
+    text-align: center;
+}
+
+#collage {
+    position: relative;
+}
+
+#paddCol {
+    padding-top: 5%;
+    background-color:rgb(238, 245, 255);
+}
+
+#source2 {
+    display: block;
+    margin: 5%;
+    width: 50%;
+}
+
+#source1, #source3 {
+    display: block;
+    margin: 0px;
+    width: 50%;
+    position: absolute;
+}
+
+#source1 {
+    left: 40%;
+    top: -7%;
+    background-color:rgb(238, 245, 255);
+    padding: 10px;
+}
+
+#source3 {
+    left: 48%;
+    top: 34%;
+    background-color:rgb(238, 245, 255);
+    padding: 10px;
+}
+
+#matcha {
+    width: 100%;
+    margin: 0px;
+}
+
+/*Main end*/
+
+/*summary start*/
+.summary {
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+    background-color: white;
+    padding: 4rem;
+}
+
+.sumContainer {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.summary h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.listContainer {
+    visibility: hidden;
+    flex: 1;
+}
+
+.downArrow {
+    width: 2rem;
+    height:fit-content;
+}
+/*summary end*/
+
+/*Footer start*/
+footer {
+    padding: 0px 4rem;
+}
+
+#social {
+    width: 12rem;
+    margin-bottom: 2.5rem;
+}
+
+.cpr {
+    color: lightgrey;
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.footList {
+    list-style: none;
+    font-size: 1.7rem;
+}
+
+.footList li {
+    margin-bottom: 1rem;
+}
+
+.footBrk {
+    display: none;
+}
+/*Footer end*/
+
+@media screen and (min-width: 1150px) {
+    
+
+    .burgerMenu {
+        display: none;
+    }
+
+    .navContainer {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .leftNav {
+        display: flex;
+        justify-content:space-between;
+        flex: 1;
+        list-style: none;
+        min-width: 400px;
+    }
+    
+    #find {
+        display: flex;
+        align-items:center;
+    }
+
+    .spaceNav {
+        content: "";
+        display: flex;
+        flex: 1;
+        flex-grow: 1.5;
+    }
+
+    .rightNav {
+        display: flex;
+        justify-content:space-between;
+        flex: 1;
+        list-style: none;
+        min-width: 500px;
+    }
+
+    .mainContainer {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .mainInfo {
+        padding: 0px;
+        margin: 0px;
+        position: absolute;
+        width: 40vw;
+        right: 4vw;
+    }
+
+    #coffee {
+        display: block;
+        width: 50%;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #collage {
+        width: 50%;
+    }
+
+    #matcha {
+        display: block;
+        width: 50%;
+        padding: 0px;
+        margin: 0px;
+        float: right;
+    }
+
+    #leftInfo {
+        padding: 0px;
+        margin: 0px;
+        position: absolute;
+        width: 40vw;
+        left: 4vw;
+    }
+    
+    .summary {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 10%;
+        padding-right: 8%;
+    }
+
+    .sumContainer {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items:flex-start;
+        width: 250px;
+    }
+
+    .sumContainer h2 {
+        margin-bottom: 1.5rem;
+    }
+
+    .listContainer li {
+        margin-bottom: 1rem;
+    }
+    
+    .listContainer {
+        visibility: visible;
+        list-style: none;
+        font-size: 1.5rem;
+    }
+    
+    .downArrow {
+        display: none;
+    }
+    
+    .footList {
+        display: flex;
+        justify-content: space-between;
+        max-width: 80%;
+        min-width: 70%;
+    }
+
+    .footBrk {
+        display: block;
+        color:lightgrey;
+    }
+    
+    .footList li {
+        margin-bottom: 1rem;
+    }
+
+}
